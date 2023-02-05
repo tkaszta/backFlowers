@@ -50,4 +50,4 @@ jobs:
           app-name: 'backGardenktim2028'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_812F898BCF7A417183DFD69A13154BA9 }}
-          package: 'target/flowers-0.0.1-SNAPSHOT.war'
+          package: 'target/flowers-0.0.1-SNAPSHOT.jar'
