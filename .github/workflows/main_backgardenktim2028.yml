@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: java-app
-          path: 'target/flowers-0.0.1-SNAPSHOT.jar'
+          path: 'target/app.jar'
 
   deploy:
     runs-on: windows-latest
@@ -50,4 +50,4 @@ jobs:
           app-name: 'backGardenktim2028'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_812F898BCF7A417183DFD69A13154BA9 }}
-          package: 'target/flowers-0.0.1-SNAPSHOT.jar'
+          package: 'target/app.jar'
