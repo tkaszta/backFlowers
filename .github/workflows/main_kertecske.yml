@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'kertecske'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_168613FCE0BF4A88A56016A9ED32038E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_048FC873AD6643B68C746440249B0166 }}
           package: '*.jar'
