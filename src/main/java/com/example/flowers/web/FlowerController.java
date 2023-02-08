@@ -13,20 +13,20 @@ import java.util.Collection;
 class FlowerController {
 
     private final Logger log = LoggerFactory.getLogger(FlowerController.class);
-    private FlowerRepository flowerRepository;
-
-    public FlowerController(FlowerRepository flowerRepository) {
-        this.flowerRepository = flowerRepository;
-    }
+//    private FlowerRepository flowerRepository;
+//
+//    public FlowerController(FlowerRepository flowerRepository) {
+//        this.flowerRepository = flowerRepository;
+//    }
 
     @GetMapping("/viragok")
     String groups() {
         return "SZia";
     }
-
-    @PostMapping("/viragok")
-    @ResponseStatus(HttpStatus.CREATED)
-    public Flower createTodo(@RequestBody Flower flower) {
-        return flowerRepository.save(flower);
-    }
+//
+//    @PostMapping("/viragok")
+//    @ResponseStatus(HttpStatus.CREATED)
+//    public Flower createTodo(@RequestBody Flower flower) {
+//        return flowerRepository.save(flower);
+//    }
 }
