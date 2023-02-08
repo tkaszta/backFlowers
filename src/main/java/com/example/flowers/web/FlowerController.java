@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 
 @RestController
-@RequestMapping("/viragok")
 class FlowerController {
 
     private final Logger log = LoggerFactory.getLogger(FlowerController.class);
@@ -20,12 +19,12 @@ class FlowerController {
         this.flowerRepository = flowerRepository;
     }
 
-    @GetMapping("")
-    Collection<Flower> groups() {
-        return flowerRepository.findAll();
+    @GetMapping("/viragok")
+    String groups() {
+        return "SZia";
     }
 
-    @PostMapping("")
+    @PostMapping("/viragok")
     @ResponseStatus(HttpStatus.CREATED)
     public Flower createTodo(@RequestBody Flower flower) {
         return flowerRepository.save(flower);
