@@ -13,11 +13,11 @@ import java.util.Collection;
 class FlowerController {
 
     private final Logger log = LoggerFactory.getLogger(FlowerController.class);
-//    private FlowerRepository flowerRepository;
-//
-//    public FlowerController(FlowerRepository flowerRepository) {
-//        this.flowerRepository = flowerRepository;
-//    }
+    private FlowerRepository flowerRepository;
+
+    public FlowerController(FlowerRepository flowerRepository) {
+        this.flowerRepository = flowerRepository;
+    }
 
     @GetMapping("/viragok")
     String groups() {
